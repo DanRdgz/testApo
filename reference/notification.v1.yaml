@@ -32,7 +32,23 @@ paths:
                     type: string
                   idSection:
                     type: string
+              examples: {}
       description: Get notifications
       operationId: '1'
+  /login:
+    get:
+      summary: get_token
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: {}
+              examples:
+                example-1: {}
+      description: ''
 components:
   schemas: {}
