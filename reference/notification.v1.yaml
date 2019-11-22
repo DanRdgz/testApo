@@ -7,33 +7,13 @@ info:
     name: Daniel Rodriguez
     email: eduardo.rodriguezg@axity.com
 servers:
-  - url: 'http://localhost:8000'
-    description: 'LocalHost:8000'
+  - url: 'http://localhost:8080'
+    description: 'LocalHost:8080'
 paths:
   /push:
     get:
       summary: Get Notifications
       tags: []
-      responses:
-        '200':
-          description: OK
-          headers: {}
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  id:
-                    type: integer
-                  title:
-                    type: string
-                  body:
-                    type: string
-                  url:
-                    type: string
-                  idSection:
-                    type: string
-              examples: {}
       description: Get notifications
       operationId: '1'
   /login:
@@ -43,13 +23,6 @@ paths:
       responses:
         '200':
           description: OK
-          content:
-            application/json:
-              schema:
-                type: object
-                properties: {}
-              examples:
-                example-1: {}
       description: ''
 components:
   schemas: {}
