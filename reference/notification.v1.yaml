@@ -7,7 +7,8 @@ info:
     name: Daniel Rodriguez
     email: eduardo.rodriguezg@axity.com
 servers:
-  - url: 'http://localhost:3000'
+  - url: 'http://localhost:8000'
+    description: 'LocalHost:8000'
 paths:
   /push:
     get:
