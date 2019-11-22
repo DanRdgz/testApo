@@ -1,0 +1,38 @@
+openapi: 3.0.0
+info:
+  title: notification
+  version: '1.0'
+  description: Notifications api
+  contact:
+    name: Daniel Rodriguez
+    email: eduardo.rodriguezg@axity.com
+servers:
+  - url: 'http://localhost:3000'
+paths:
+  /push:
+    get:
+      summary: Get Notifications
+      tags: []
+      responses:
+        '200':
+          description: OK
+          headers: {}
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  title:
+                    type: string
+                  body:
+                    type: string
+                  url:
+                    type: string
+                  idSection:
+                    type: string
+      description: Get notifications
+      operationId: '1'
+components:
+  schemas: {}
